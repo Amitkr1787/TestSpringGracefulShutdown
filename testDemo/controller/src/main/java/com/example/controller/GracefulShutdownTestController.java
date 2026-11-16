@@ -18,7 +18,8 @@ public class GracefulShutdownTestController {
         int seconds = Math.min(Math.max(delaySeconds, 1), 120);
         log.info("slow request started ({}s); trigger shutdown while this runs to verify graceful shutdown", seconds);
         Thread.sleep(seconds * 1000L);
-        log.info("slow request finished after {}s", seconds);
+        log.info("slow request finished after ;{}s", seconds);
+        log.info("added this for test git codeslow request finished after {}s", seconds);
         return "ok after " + seconds + "s";
     }
 }
